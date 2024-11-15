@@ -1,0 +1,16 @@
+.hello{
+    color: aqua;
+}
+
+.bye{
+    justify-content: center;
+    display: flex;
+}
+
+.hi{
+    background-color: red;
+}
+
+body{
+    background-color: blue;
+}

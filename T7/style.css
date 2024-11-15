@@ -1,0 +1,140 @@
+.header{
+    line-height: 100px;
+    background-color: rgb(8, 30, 75);
+}
+
+.main a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.main{
+    font-size: larger;
+}
+
+a:hover {
+    background-color: lightsteelblue;
+    color: rgba(8, 41, 229, 0.932);
+}
+
+button{
+    float: right;
+    font-size: larger;
+    background-color: rgb(16, 14, 14);
+    color: white;
+    margin: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.one li{ 
+    font-size:large ;
+    margin: 25px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+i{  
+    margin: 10px;
+    font-size: large;
+    color:cadetblue;
+}
+
+i:hover{
+    color: crimson;
+}
+.two{
+    height: 10px;
+    background-color: lightslategrey;
+}
+
+/* media responsive */
+
+@media (max-width:320px){
+    .main{
+        font-size: 8px;
+    }
+
+    .main button{
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .one li{
+        font-size: 8px;
+        margin: 3px;
+    }
+
+    i{
+        font-size: 8px;
+        margin: 3px;
+    }
+}
+
+@media (min-width:321px) and (max-width:375px){
+    
+    .main{
+        font-size: 11px;
+    }
+
+    .main button{
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .one li{
+        font-size: 11px;
+        margin: 3px;
+    }
+
+    i{
+        font-size: 11px;
+        margin: 3px;
+    }
+}
+
+@media (min-width:376px) and (max-width:425px){
+    .main{
+        font-size: small;
+    }
+
+    .main button{
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .one li{
+        font-size: small;
+        margin: 3px;
+    }
+
+    i{
+        font-size: small;
+        margin: 3px;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px){
+    .main{
+        font-size: large;
+    }
+
+    .main button{
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .one li{
+        font-size: large;
+        margin: 5px;
+    }
+
+    i{
+        font-size: large;
+        margin: 5px;
+    }
+}

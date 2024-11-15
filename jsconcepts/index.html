@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+
+</head>
+
+<body>
+    <h1 style="justify-content: center; text-align: center;">Javascript Arrays</h1>
+    <script>
+        const cars = ["Saab", "Volvo", "BMW"];
+//     const cars = [];
+//     cars[0] = "Saab";
+//     cars[1] = "Volvo";
+//     cars[2] = "BMW";
+
+    // const cars = new Array("Saab", "Volvo", "BMW");
+    // let car = cars[2];
+   // const cars = ["saab", "volvo", "bmw"];
+    //cars[0] = "mahindra"
+    //const person = {firstName:"john", lastName:"doe", age:46};
+    //const fruits = ["B", "O", "A", "M"];
+    //let length = fruits.length
+    //let fruit = fruits[0];
+    //let fruit = fruits[fruits.length - 2]
+    // let fLen = fruits.length;
+    // let text = "<ul>";
+    //     for (let i = 0; i < fLen; i++) {
+    //         text += "<li>" + fruits[i] + "</li>";
+    //     }
+
+    //     text += "</ul>";
+    // const Girls = ["Cecilie", "Lone"];
+    // const Boys = ["Emil", "Tobias", "Linus"];
+    // const Children = Girls.concat(Boys);
+    //javascript iteration
+    // const numbers = [45, 4, 9, 16, 25];
+    // let txt = "";
+    // numbers.forEach(myFunction);
+    // function myFunction(value, index, array) {
+    //     txt += value + "<br>";
+    // }
+    // js map
+    // const numbers1 = [45,  4, 9, 16, 25];
+    // const numbers2 = numbers1.map(myFunction);
+    // document.getElementById("demo").innerHTML = numbers2;
+
+    // function myFunction(value,index,array) {
+    //     return value * 2;
+    // }
+    // let day;
+    // switch (new Date().getDay()) {
+    //     case 0:
+    //         day = "Sunday";
+    //         break;
+    //     case 1:
+    //         day = "Monday";
+    //         break;
+    //     case 2:
+    //         day = "Tuesday";
+    //         break;
+    //     case 3:
+    //         day = "Wednesday";
+    //         break;
+    //     case 4:
+    //         day = "Thursday";
+    //         break;
+    //     case 5:
+    //         day = "Friday";
+    //         break;
+    //     case 6:
+    //         day ="Saturday";
+    // }
+    // let text;
+    // switch (new Date().getDay()) {
+    //     case 6:
+    //         text = "Today is Saturday";
+    //         break;
+    //     case 0:
+    //         text = "Today is Sunday";
+    //         break;
+    //     default:
+    //         text = "Looking forward to the Weekend";
+    // }
+    // switch (new Date().getDay()) {
+    //     default:
+    //         text = "Looking forward to the Weekend";
+    //         break;
+    //     case 6:
+    //         text = "Today is Saturday";
+    //         break;
+    //     case 0:
+    //         text = "Today is Sunday";
+    // }
+    // let text;
+    // switch (new Date().getDay()) {
+    //     case 4:
+    //     case 5:
+    //         text = "Soon it is Weekend";
+    //         break;
+    //     case 0:
+    //     case 6:
+    //         text = "It is Weekend";
+    //         break;
+    //     default:
+    //         text = "Looking forward to the Weekend";
+    // }
+
+    // if (new Date().getHours() < 18) {
+    // console.log("Good day!");
+    // }
+
+    // const hour = new Date().getHours();
+    // let greeting;
+
+    // if (hour < 18) {
+    //     greeting = "Good evening";
+    // }
+    // else
+    // {
+    //     greeting = "Good ";
+    // }
+    // console.log(greeting);
+
+    // const hour = new Date().getHours();
+    // let greeting;
+    // if (hour < 10) {
+    //     greeting = "Good morning";
+    // }
+    // else if (hour < 20) {
+    //     greeting = "Good day";
+    // }
+    // else
+    // {
+    //     greeting = "Good Evening";
+    // }
+    // console.log(greeting)
+        //For Loops
+    // const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    // let text = "";
+    // for (let i = 0; i < cars.length; i++) {
+    //     text += cars[i] + "<br>";
+    // }
+    // console.log(cars)
+
+    // const cars = ["BMW", "volvo", "saab", "ford"];
+    // let i, len, text;
+    // for (i = 0, len = cars.length, text =""; i < len; i++) {
+    //     text += cars[i] + "<br>";
+    // }
+    // console.log(cars)
+
+    //Array.prototype.at()
+    // const array1 = [5,12,8,130,44];
+    // let index = 0;
+    // console.log(`Using an index of ${index} the item returned is ${array1.at(index)}`)
+    // index = -3;
+    // console.log(`using an index of ${index} item returned is ${array1.at(index)}`)
+
+    //Array.prototype.concat()
+    // const array1 = ['1','2','3'];
+    // const array2 = ['4','5','6'];
+    // const array3 = array1.concat(array2);
+
+    // console.log(array3)
+
+    //Array.prototype.copyWithin()
+    // const array1 = ['a','b','c','d','e'];
+    // console.log(array1.copyWithin(0,3,4));
+    // console.log(array1.copyWithin(1,3));
+
+    //Array.prototype.every
+    // const isBelowThreshold = (currentValue) => currentValue < 40;
+
+    // const array1 = [1,30,39,29,10,13];
+    // console.log(array1.every(isBelowThreshold));
+
+    //Array.prototype.fill()
+    // const array1 = [1,2,3,4];
+    // console.log(array1.fill(0,2,4));
+    // console.log(array1.fill(5,1));
+    // console.log(array1.fill(6))
+
+    //Array.prototype.filter()
+    // const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+    // const result = words.filter(word => word.length > 6);
+    // console.log(result)
+
+    //Array.prototype.find()
+    // const array1 = [5,2,8,130,44];
+    // const found = array1.find(element => element > 10);
+    // console.log(found);
+
+    //Array.prototype.findindex()
+    // const array1 = [5,12,8,130,44];
+    // const isLargeNumber = (element) => element > 13;
+    // console.log(array1.findIndex(isLargeNumber))
+
+    //Array.prototype.findLast()
+    // const array1 = ['5','100','101']
+    // const found = array1.findLast((element) => element > 1);
+    // console.log(found)
+
+    //Array.prototype.findLastindex
+    // const array1 = [5,45,80,99];
+
+    // const isLargeNumber = (element) => element > 45;
+    // console.log(array1.findLastIndex(isLargeNumber));
+
+    //Array.prototype.flat()
+    // const arr1 = [0,1,2,[3,4]];
+    // console.log(arr1.flat());
+    // const arr2 = [0,1,2,[[[3,4]]]];
+    // console.log(arr2.flat(2));
+
+    //Array.prototype.flatMap()
+    // const arr1 = [1,2,1];
+    // const result = arr1.flatMap((num) => (num === 2 ? [2,2] : 1));
+    // console.log(result);
+
+    //Array.isArray()
+    // console.log(Array.isArray([1,3,5]));
+    // console.log(Array.isArray('[]'));
+    // console.log(Array.isArray(new Array(5)));
+    // console.log(Array.isArray(new Int16Array([15,33])));
+
+    //Array.prototype.join()
+    // const elements = ['fire', 'air', 'water'];
+    // console.log(elements.join());
+    // console.log(elements.join(''));
+    // console.log(elements.join('-'));
+
+    //Arrays.prototype.keys()
+    // const array1 = ['a', 'b', 'c'];
+    // const iterator = array1.keys();
+
+    // for (const key of iterator) {
+    //     console.log(key)
+    // }
+
+    //Array.prototype.lastindexof()
+    // const animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+    // console.log(animals.lastIndexOf('Dodo'));
+    // console.log(animals.lastIndexOf('Tiger'));
+
+    //Array.prototype.map()
+    // const array1 = [1,4,9,16];
+    // const map1 = array1.map(x => x * 2);
+    // console.log(map1)
+
+    //Array.of()
+    // console.log(Array.of('foo','2','bar', 'true'));
+    // console.log(Array.of());
+
+    //Array.prototype.pop()
+    // const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+    // console.log(plants.pop());
+    // console.log(plants);
+    // plants.pop();
+    // console.log(plants);
+
+    //For In Loop
+    // const person = {fname:"John", lname:"Doe", age:25};
+    // let txt = "";
+    // for (let x in person) {
+    //     txt += person[x] + " ";
+    // }
+    // console.log(txt);
+
+    // const numbers = [45,4,9,16,25];
+    // let txt = "";
+    // for (let x in numbers){
+    //     txt += numbers[x] + "";
+    // }
+    // console.log(txt)
+
+    // let language = "javascript";
+    // let text = "";
+    // for (let x of language) {
+    //     text += x + "<br>";
+    // }
+    // console.log(text)
+
+    //While Loop
+    // let text = "";
+    // let i = 0;
+    // while (i < 10) {
+    //     text += "<br>The number is" +  " " + i;
+    //     i++;
+    // }
+    // console.log(text)
+
+    //DO While Loop
+    // let text = ""
+    // let i = 0;
+
+    // do {
+    //     text += "<br>The number is " + i;
+    //     i++;
+    // }
+    // while (i < 10);
+    // console.log(text)
+
+    //javascript objects
+    // let person = {
+    //     firstName : "john",
+    //     lastName : "doe",
+    //     age :50,
+    //     eyeColor : "blue"
+    // };
+    // console.log(person.firstName + " " + person.lastName)
+
+    // const person = {
+    //     firstName : "john",
+    //     lastName : "doe",
+    //     age : 50,
+    //     eyeColor : "blue"
+    // };
+    // console.log(person.firstName + " " + person.lastName);
+    // console.log(Object.entries(person));
+    // for(const i in cars){
+    //     console.log([i]);
+    // }
+
+    // const myarr = [1,2,3,4,5,24];
+    // const my = myarr.reduce(
+    //     (a, c) => a * c);
+    // console.log(my);
+
+    //Array.prototype.filter()
+    // const words = ["spray", "limit", "Volvo", "Mahindra", "Tata", "BharathBenz"];
+    // const result = words.filter(word => word.length > 5);
+    // console.log(result)
+
+    //Array.prototype.find()
+    // const array1 = [5,12,8,130,44];
+    // const result = array1.find(element => element > 10);
+    // console.log(result);
+
+    //Array.prototype.flatMap()
+    // const arr1 = [1,2,2,1];
+    // const result = arr1.flatMap((num) => (num === 2 ? [2,2] : 1));
+    // console.log(result)
+
+    //Array.of()
+    // console.log(Array.of('foo', 2, 'bar', true));
+    // console.log(Array.of());
+
+    // let n = 5;
+    // let string = "";
+    // for(let i = 1; i <= n; i++) {
+    //     for(let j = 0; j < n-i; j++) {
+    //         string += " ";
+    //     }
+    //     for(let k=0;k<i;k++){
+    //         string += "*";
+    //     }
+    //     string += "\n";
+    // }
+    // console.log(string);
+    
+    //   let n=5;
+    //   let string = "";
+    //   for (let i=0;i<n;i++){
+    //     for (let j=0;j<n;j++){
+    //         string += "*";
+    //     }
+    //     string += "\n";
+    //   }
+    //   console.log(string)
+
+    //Array.with()
+    // const arr1 = [1,2,4,5,6,8]
+    // console.log(arr1.with(4,3));
+    // // console.log(arr1)
+
+        // for (i=1;i<=15;i++){
+        //     if(i%3 == 0){
+        //         console.log("Fizz");
+        //     }
+        //     else if (i%5 == 0){
+        //         console.log("Buzz");
+        //     }
+        //     else if (i%3 == 0 && i%5 == 0){
+        //         console.log("FizzBuzz")
+        //     }
+        //     else {
+        //         console.log(i)
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>

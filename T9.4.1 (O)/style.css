@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    
+    align-items: center;
+   
+    justify-content: space-between;
+}
+
+.one, .two, .three, .four{
+    /* border: 1px solid black; */
+    width: 300px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px;
+}
+
+p{
+    color: rgba(155, 154, 154, 0.959);
+}
+
+img{
+    float: right;
+}
+
+.one img, .three img{
+    margin-top: 15px;
+}
+
+.one{
+    border-top: 3px solid skyblue;
+    
+    margin-top:20%;
+    margin-left:10%;
+}
+
+.two{
+    border-top: 3px solid red;
+    margin-top:7%;
+    margin-right:20%
+}
+
+.three{
+   
+    border-top: 3px solid orange;
+     margin-right:10%;
+}
+
+.four{
+    border-top: 3px solid rgb(130, 130, 248);
+    /* position: absolute; */
+}

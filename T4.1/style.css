@@ -1,0 +1,25 @@
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,th,td{
+    /* width: 100%; */
+    /* border-collapse: collapse; */
+    border: 2px solid olive;
+    text-align: center;
+    padding: 20px;  
+}
+
+table{
+    border-spacing: 20px;
+}
+
+th:nth-child(odd) {
+    background-color: #d6d6d6;
+}
+
+tr:nth-child(even) {
+    background-color: #d6d6d6;
+}

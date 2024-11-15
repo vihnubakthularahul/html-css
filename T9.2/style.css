@@ -1,0 +1,299 @@
+body{
+    background-color: rgb(244, 188, 5);
+}
+/* .header{
+    background-color: rgb(244, 188, 5);
+    height: 100vh;
+} */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+h1{
+    margin-top: 100px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    /* text-align:start; */
+    margin-top: 75px;
+}
+.main .one{
+    padding: 10px;
+    height: 300px;
+    width: 30%;
+    background-color: grey;
+}
+
+.main .two{
+    padding: 10px;
+    height: 300px;
+    width: 30%;
+    background-color: darkgrey;
+}
+
+.main .three{
+    padding: 10px;
+    height: 300px;
+    width: 30%;
+    background-color: rgb(160, 158, 158);
+}
+
+.two li{
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.three p{
+    font-size: larger;
+    line-height: 30px;
+}
+
+.one p{
+    line-height: 30px;
+    font-size: medium;
+}
+
+.one pre{
+    float: right;
+    font-size: large;
+}
+
+.four{
+    display: flex;
+    flex-direction: row;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.four .footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(100, 98, 98, 0.982);
+}
+
+.four .start{
+    float: left;
+}
+
+.four .end{
+    float: right;
+}
+
+/* media responsive */
+
+@media (max-width:320px) {
+
+    h1{ 
+        font-size: small;
+        margin-top: 15px;
+    }
+
+    .main{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .one{
+        width: 280px;
+    }
+
+    .main .two{
+        width: 280px;
+    }
+
+    .main .three{
+        width: 280px;
+    }
+
+    .four{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 300px;
+        display: flex;
+    }
+
+    .four .footer{
+        height: 100px;
+    }
+
+    .four .start{
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .four .end{
+        margin-top: 2px;
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+    /* h1{ 
+        font-size: large;
+        margin-top: 15px;
+    }
+
+    .main{
+        display: grid;
+        margin-top: 15px;
+    }
+    .main .one, .main .two, .main .three{
+        width: 100%;
+    }
+
+} */
+
+@media (min-width:321px) and (max-width:375px){
+
+    h1{ 
+        font-size: large;
+        margin-top: 15px;
+    }
+
+    .main{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .one{
+        width: 340px;
+    }
+
+    .main .two{
+        width: 340px;
+    }
+
+    .main .three{
+        width: 340px;
+    }
+
+    .four{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 360px;
+        display: flex;
+    }
+
+    .four .footer{
+        height: 100px;
+    }
+
+    .four .start{
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .four .end{
+        margin-top: 2px;
+        font-size: small;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width:376px) and (max-width:425px) {
+
+    h1{ 
+        font-size: larger;
+        margin-top: 15px;
+    }
+
+    .main{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main .one{
+        width: 390px;
+    }
+
+    .main .two{
+        width: 390px;
+    }
+
+    .main .three{
+        width: 390px;
+    }
+
+    .four{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 410px;
+    }
+
+    .four .footer{
+        height: 100px;
+    }
+
+    .four .start{
+        font-size: medium;
+    }
+
+    .four .end{
+        margin-top: 2px;
+        font-size: medium;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+
+    h1{
+        margin-top: 30px;
+    }
+
+    .main{
+        margin-top: 30px;
+    }
+
+    .main .one,
+    .main .two,
+    .main .three{
+        width:250px;
+    }
+
+    .four{
+        padding: 0px;
+    }
+
+    .four .footer{
+        height: 70px;
+    }
+
+    .footer{
+        display: flex;
+    }
+
+    .four .start{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .four .end{
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    
+    .main{
+        margin-top: 30px;
+    }
+    .four{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid olive;
+    padding: 30px 100px 15px;
+}
+
+td:nth-child(even){
+    background-color:rgb(213, 254, 254);
+}
+
+tr:hover {background-color: rgb(245, 193, 193);}

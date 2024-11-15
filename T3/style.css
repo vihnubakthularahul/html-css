@@ -1,0 +1,32 @@
+*{
+    background-color: rgba(124, 180, 180, 0.392);
+}
+
+h1{
+   text-align: center;
+   background-color: rgb(108, 66, 145);
+}
+
+input[type="text"]{
+    width: 30%;
+}
+
+input[type='submit']{
+    background-color: blueviolet;
+    color: aliceblue;
+    display:inline-block;
+    cursor: pointer;
+}
+
+button{
+    background-color: red;
+    color: aliceblue;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto 20px;
+    background-color: rgb(17, 118, 207);
+    text-align: center;
+    gap: 10px 25px;
+}
